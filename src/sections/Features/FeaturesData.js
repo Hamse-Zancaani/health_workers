@@ -6,23 +6,23 @@ import iconFour from '../../assets/features/4.png';
 const featuresData = [
     {
         'icon': iconOne,
-        'title': 'Safety first',
-        'description': 'We prioritize safety with health checks and more'
+        'title': 'Mål',
+        'description': 'Vores mål er, at vores kunder og vikarer altid har tillid til os – og at vi i samarbejde med vores kunder og vikarer skaber det bedste resultat'
     },
     {
         'icon': iconTwo,
-        'title': 'Insurance accepted',
-        'description': 'We’re in network with major insurers like Delta Dental, Aetna, and Cigna.'
+        'title': 'Værdier',
+        'description': 'Vores virksomhed bygger på tillid, og vores viljestyrke er at vi gør alt for at opfylde vores kunders forventninger.'
     },
     {
         'icon': iconThree,
-        'title': 'Full-service dentistry',
-        'description': 'Our clinic offer a full  of dental service, from exams to implants and veneers.'
+        'title': 'Omfattende service',
+        'description': 'Vi tilbyder skræddersyede løsninger, der passer til jeres specifikke behov inden for sundhedsvikarbemanding.'
     },
     {
         'icon': iconFour,
-        'title': 'No judgment ever',
-        'description': 'From floss bosses to sweet tooths, every mouth is welcome.'
+        'title': 'Inklusion',
+        'description': 'Vi værdsætter mangfoldighed og sikrer, at vores vikarer repræsenterer forskellige baggrunde og erfaringer.'
     }
 ]
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './Banner.scss';
 import {Link} from 'react-router-dom';
 import icon from '../../assets/banner/icons/Calling.png';
-import bannerImg from '../../assets/banner/1.png';
+import bannerImg from '../../assets/banner/3.jpg';
 import doctorImg from '../../assets/banner/doctor.png';
 import bannerPattern from '../../assets/banner/pattern_02.png';
 import shapeOne from '../../assets/banner/vector_01.png';
@@ -20,12 +20,12 @@ const Banner = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
-                                    <h1>Entrust your smile to professionals</h1>
-                                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                                    <h1>Din samarbejds partner</h1>
+                                    <p>Når du vælger Vikarin som din samarbejdspartner, får du kvalificerede vikarer til sundhedssektoren døgnet rundt.</p>
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
-                                            <Link to="/contact">Book an appointment</Link>
+                                            <Link to="/contact">Get in touch</Link>
                                         </div>
 
                                         <div className="banner-call">
@@ -33,8 +33,8 @@ const Banner = () => {
                                                 <img src={icon} alt="icon" />
                                             </div>
                                             <div className='call-text'>
-                                                <p>Dental 24H Emergency</p>
-                                                <h6>03 482 394 123</h6>
+                                                <p> 24H Available</p>
+                                                <h6>25 72 72 49</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -47,13 +47,13 @@ const Banner = () => {
                                         <img src={bannerImg} alt="banner model" />
                                     </div>
                                     <div className='info-box'>
-                                        <div className="info-img">
+                                        {/* <div className="info-img">
                                             <img src={doctorImg} alt="doctor" />
-                                        </div>
-                                        <div className='info-text'>
+                                        </div> */}
+                                        {/* <div className='info-text'>
                                             <p>Dr. Samantha Alice</p>
                                             <p><small>Consultant</small></p>
-                                        </div>
+                                        </div> */}
                                     </div>  
 
                                     {/* Vector Shapes */}

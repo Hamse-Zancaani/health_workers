@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/footer_logo.png';
+import logo1 from '../../assets/logo1.png';
 import './Footer.scss';
 import { FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
 import { Link } from 'react-router-dom';
@@ -11,41 +11,41 @@ const Footer = () => {
 
     const footerMenu = [
         {
-            'name' : 'About Us',
+            'name' : 'Om Os',
             'link' : '/'
         },
         {
-            'name' : 'Dental Services',
+            'name' : 'Service',
             'link' : '/'
         },
         {
-            'name' : 'Dentist',
+            'name' : 'Rekruttering',
             'link' : '/'
         },
         {
-            'name' : 'Blogs',
+            'name' : 'For Vikarer',
             'link' : '/'
         },
         {
-            'name' : 'FAQs',
+            'name' : 'Nyheder',
             'link' : '/'
         }
     ];
 
     const footerContacts = [
         {
-            'title': 'Phone Number',
-            'info': '+088 123 654 987',
+            'title': 'telefonnummer',
+            'info': '25 72 72 49',
             'icon': call
         },
         {
-            'title': 'Open Hour',
-            'info': '09:00 AM - 18:00 PM',
+            'title': 'åben times',
+            'info': 'Døgnåbent hele året',
             'icon': time
         },
         {
-            'title': 'Clinic Address',
-            'info': '35 West Dental Street California 1004',
+            'title': 'Address',
+            'info': 'Åsumvej 141, 5240 Odense NØ',
             'icon': location
         }
     ]
@@ -56,9 +56,9 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-6 col-md-5">
                         <div className="footer-logo">
-                            <img src={logo} alt="logo" />
+                            <img src={logo1} alt="logo" />
                         </div>
-                        <p>Dental Care Seattle is a top-rated local practice for cosmetic, preventative, and restorative dentistry on First Hill</p>
+                        <p>Din pålidelige partner inden for sundhedsvikararbeid. Vi leverer kvalificerede vikarer døgnet rundt</p>
 
                         <div className="social-logo">
                             <p>Follow us on</p>
@@ -102,7 +102,7 @@ const Footer = () => {
 
                 <div className="copyright-area">
                     <div className='copy-text'>
-                        <p>&copy; Dentalist. All Right Reserved</p>
+                        <p>&copy; Vikarin. All Right Reserved</p>
                     </div>  
                     <div className='copy-links'>
                         <ul>

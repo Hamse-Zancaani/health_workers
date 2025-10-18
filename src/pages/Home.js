@@ -9,6 +9,7 @@ import Features from '../sections/Features/Features';
 import Footer from '../sections/Footer/Footer';
 import Services from '../sections/Services/Services';
 import Testimonial from '../sections/Testimonial/Testimonial';
+import Gallery from '../sections/Gallery/Gallery';
 
 const Home = () => {
 
@@ -17,12 +18,15 @@ const Home = () => {
             <Navbar/>
             <Banner/>
             <Services/>
-            <Emergency/>
+           <Expert/>
+             <Gallery/>
             <Features />
-            <Expert/>
+            
+           {/* <Emergency/> */}
             <Testimonial/>
-            <Blogs/>
-            <Appointment/>
+            {/* <Blogs/> */}
+          
+            {/* <Appointment/> */}
             <Footer/>
         </>
     );

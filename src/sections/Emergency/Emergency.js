@@ -16,7 +16,7 @@ const Emergency = () => {
                     </div>
                     <div className="col-lg-6 col-md-6">
                         <div className="emergency-text">
-                            <SectionTitle subTitle="Dental 24H Emergency" title="Gentle, friendly treatment from our locally practice." description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."/>
+                            <SectionTitle subTitle="Dental 24H Emergency" title="Vores specialisering" description="Vi er specialiserede i at levere fleksible og pålidelige løsninger til sundhedssektoren."/>
 
                             <div className="theme-btn">
                                 <Link to='/'>Book an appointment</Link>

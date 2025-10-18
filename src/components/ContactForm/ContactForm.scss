@@ -1,7 +1,7 @@
 @import '../../sass/colors.scss';
 
 .appointment-btn {
-    background: $color-blue;
+    background:#8F5197 ;
     color: $color-white;
     padding: 14px 20px;
     text-decoration: none;
@@ -15,7 +15,7 @@
 
     &:hover {
         background: $color-white;
-        color: $color-blue;
+        color: #8F5197;
         border: 1px solid $color-blue;
     }
 }

@@ -1,62 +1,125 @@
+$color-primary: #002E5D;   
+$color-accent: #8F5197;    
+$color-bg: #F5F8FA;        
+$color-text: #222831;      
+$color-light: #E9F4FB;     
+$color-white: #ffffff;
+$color-gray: #6c757d;
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // 4 boxes per row
+    gap: 30px; // spacing between boxes
+    align-items: stretch; // ensures all boxes same height
+}
+
 .service-box {
     border: 1px solid #1819451a;
-    padding: 15px;
+    padding: 20px;
     border-radius: 32px;
     text-align: center;
-    margin-bottom: 30px;
+    background: $color-bg;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; // content starts at top
+    height: 100%; // stretch to grid row height
+
+    animation: float 6s ease-in-out infinite;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgba(170, 2, 69, 0.15);
+
+        .icon-area {
+            transform: scale(1.1);
+            background: #8F5197;
+        }
+
+        .service-text h3 a {
+            color: $color-primary;
+        }
+    }
 
     .icon-area {
-        background: #DBDEFA;
-        padding: 80px;
+        background: $color-light;
+        padding: 40px;
         border-radius: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
 
         .icon-box {
-            margin: auto;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 80%;
+                max-height: 80%;
+                object-fit: contain;
+                display: block;
+                transition: transform 0.3s ease;
+            }
         }
     }
 
     .service-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-grow: 1; // ensures text area grows evenly
+
         h3 {
             font-size: 20px;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
 
             a {
                 text-decoration: none;
-                color: #181945;
+                color: $color-text;
             }
         }
 
         p {
             font-size: 14px;
+            color: $color-gray;
         }
     }
 }
 
-// Small Device Responsive
-@media (min-width: 576px) and (max-width: 767px) {
-    .service-box {
-        .icon-area {
-            padding: 50px;
-        }
+// Floating animation
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+// Responsive adjustments
+@media (max-width: 991px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr); // 2 boxes per row
+    }
+    .service-box .icon-area {
+        padding: 35px;
     }
 }
 
-// Medium Device Responsive
-@media (min-width: 768px) and (max-width: 991px) {
-    .service-box {
-        .icon-area {
-            padding: 50px;
-        }
+@media (max-width: 575px) {
+    .services-container {
+        grid-template-columns: 1fr; // full width
     }
-}
-
-// Medium Device Responsive
-@media (min-width: 992px) and (max-width: 1199px) {
-    .service-box {
-        .icon-area {
-            padding: 50px;
-        }
+    .service-box .icon-area {
+        padding: 30px;
     }
 }

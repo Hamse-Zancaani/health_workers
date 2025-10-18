@@ -1,6 +1,12 @@
 @import './../../sass/fonts.scss';
 @import './../../sass/colors.scss';
 
+// Update colors to match Vikarin logo
+$color-primary: #002E5D;  // logo main color
+$color-accent: #00A0DF;   // logo accent
+$color-white: #ffffff;
+$color-black: #222831;
+
 .main-nav {
     padding: 15px 0;
     position: fixed;
@@ -9,6 +15,7 @@
     right: 0;
     z-index: 99999;
     background: $color-white;
+    box-shadow: 0 2px 8px rgba(10, 4, 4, 0.08);
 
     .navbar {
         padding: 0;
@@ -18,17 +25,19 @@
                 max-width: 150px;
             }
         }
+
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    color: $color-black;
+                    color: #8F5197;
                     font-size: 15px;
                     font-weight: 600;
                     padding: 0;
-                    margin: 10px 30px;
+                    margin: 10px 18px;
+                    transition: color 0.3s ease;
 
                     &:hover {
-                        color: $color-blue;
+                        color: $color-primary; // hover matches logo main color
                     }
                 }
             }
@@ -40,7 +49,7 @@
 @media (max-width: 575px) {
     .main-nav {
         padding: 10px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 6px -1px, rgba(0,0,0,0.06) 0px 2px 4px -1px;
 
         .navbar {
             .navbar-nav {
@@ -57,7 +66,7 @@
 @media (min-width: 576px) and (max-width: 767px) {
     .main-nav {
         padding: 10px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 6px -1px, rgba(0,0,0,0.06) 0px 2px 4px -1px;
 
         .navbar {
             .navbar-nav {
@@ -75,7 +84,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .main-nav {
         padding: 15px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 6px -1px, rgba(0,0,0,0.06) 0px 2px 4px -1px;
 
         .navbar {
             .navbar-nav {
@@ -92,7 +101,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .main-nav {
         padding: 20px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgba(0,0,0,0.1) 0px 4px 6px -1px, rgba(0,0,0,0.06) 0px 2px 4px -1px;
 
         .navbar {
             .navbar-nav {

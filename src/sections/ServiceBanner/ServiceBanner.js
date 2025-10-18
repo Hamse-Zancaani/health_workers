@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ServiceBanner.scss';
-import serviceBanner from '../../assets/servicePage/1.png';
+import serviceBanner from '../../assets/servicePage/77.png';
 
 const ServiceBanner = () => {
     return (
@@ -12,8 +12,8 @@ const ServiceBanner = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-5 col-md-6">
                                 <div className="service-banner-text" data-aos="fade-up" data-aos-duration="2000">
-                                    <h2>Root Canals</h2>
-                                    <p>Root canals have gotten a bad reputation, but us dentists don’t know why! These are the types of treatments that actually make you feel better!</p>
+                                    <h2>Vores Services</h2>
+                                    <p></p>
                                     <div className="theme-btn">
                                         <Link to="/">Book an appointment</Link>
                                     </div>
