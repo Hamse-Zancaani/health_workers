@@ -1,0 +1,106 @@
+@import '../../sass/colors.scss';
+
+.features-section {
+    background: #f9fafc;
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+    }
+
+    // ✅ Center all cards in the row
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; // small spacing between cards
+    }
+
+    .icon-list-box {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        text-align: center;
+        width: 280px; // consistent card width
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: $color-black;
+        }
+
+        .feature-desc {
+            color: #555;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .feature-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+
+            li {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 8px;
+                font-size: 14.5px;
+                line-height: 1.4;
+                color: #444;
+
+                svg {
+                    color: $color-blue;
+                    margin-right: 10px;
+                    margin-top: 4px;
+                    flex-shrink: 0;
+                }
+
+                a {
+                    color: $color-blue;
+                    text-decoration: none;
+                    word-break: break-all;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .features-section {
+        padding: 60px 0;
+
+        .icon-list-box {
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 25px 20px;
+
+            .feature-checklist {
+                text-align: left;
+            }
+        }
+    }
+}

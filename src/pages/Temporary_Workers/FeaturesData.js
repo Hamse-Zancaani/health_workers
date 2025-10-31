@@ -6,8 +6,8 @@ import iconFour from '../../assets/features/4.png';
 const featuresData = [
     {
         'icon': iconOne,
-        'title': 'Mål',
-        'description': 'Vores mål er, at vores kunder og vikarer altid har tillid til os – og at vi i samarbejde med vores kunder og vikarer skaber det bedste resultat'
+        'title': 'Før din vagt',
+        'description': 'Skriv dig op til vagt på: vikar@vikarin.dk eller https://vikarbooking.cas.dk/#/login'
     },
     {
         'icon': iconTwo,

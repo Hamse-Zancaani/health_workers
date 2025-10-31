@@ -58,10 +58,10 @@ const Banner = () => {
 
                                     {/* Vector Shapes */}
                                     <div className="shapes">
-                                        <img src={shapeOne} alt="shape" />
+                                        {/* <img src={shapeOne} alt="shape" /> */}
                                         <img src={shapeTwo} alt="shape" />
                                         <img src={shapeThree} alt="shape" />
-                                        <img src={shapeFour} alt="shape" />
+                                        {/* <img src={shapeFour} alt="shape" /> */}
                                     </div>
                                 </div>
                             </div>

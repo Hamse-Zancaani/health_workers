@@ -10,20 +10,24 @@ const Team = () => {
 
     const teams = [
         {
-            'img': imgOne,
-            'name': 'Dianne Russell'
+            'img': imgThree,
+            'name': 'Cabdinuur Falaash',
+            'title': 'Direktør' // <--- Added Title
         },
         {
             'img': imgTwo,
-            'name': 'Esther Howard'
+            'name': 'Mikaal Weli',
+            'title': 'Vagtkoordinator' // <--- Added Title
         },
         {
-            'img': imgThree,
-            'name': 'Darrell Steward'
+            'img': imgOne,
+            'name': 'Kaltum Adan',
+            'title': 'HR ansvarlig' // <--- Added Title
         },
         {
             'img': imgFour,
-            'name': 'Jenny Wilson'
+            'name': 'Mustafa Sahid',
+            'title': 'Læge & kursus ansvarlig' // <--- Added Added Title
         }
     ]
 
@@ -34,26 +38,26 @@ const Team = () => {
                 <div className="row">
                     <div className="col-lg-7">
                         <SectionTitle 
-                            subTitle="Meet our Team"
-                            title="Get to know the dentalist
-                            dental Team"
+                            subTitle="Mød os"
+                            title="Det team der står bag Vikar-ind´s succes"
                         />
                     </div>
 
                     <div className="col-lg-5">
-                        <p className='pt-5'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                        <p className='pt-5'></p>
                     </div>
                 </div>
 
                 <div className="row">
                     {
-                        teams.map (team => 
-                            <div className="col-lg-3 col-sm-6">
+                        teams.map((team, index) => 
+                            <div className="col-lg-3 col-sm-6" key={index}> {/* Added key for map loop */}
                                 <div className="team-card">
                                     <div className="team-img">
-                                        <img src={team.img} alt="" />
+                                        <img src={team.img} alt={`Profile of ${team.name}`} /> {/* <--- Updated alt attribute */}
                                     </div>
                                     <h3>{team.name}</h3>
+                                    <p className="team-title">{team.title}</p> {/* <--- Added Title display */}
                                 </div>
                             </div>
                         )

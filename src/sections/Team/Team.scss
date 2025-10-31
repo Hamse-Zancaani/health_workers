@@ -32,7 +32,19 @@
         h3 {
             font-size: 18px;
             font-weight: 600;
+            margin-bottom: 5px; // Reduced margin to bring title closer
         }
+
+        // --- NEW STYLE ADDED FOR JOB TITLE ---
+        .team-title {
+            font-size: 15px; // Slightly smaller font size than the name
+            font-weight: 400; // Normal weight
+            color:$color-black; // Assuming $theme-color is defined in colors.scss, use it for accent
+            line-height: 1.5;
+            margin-top: 0;
+            margin-bottom: 0; // Remove bottom margin to keep card tight
+        }
+        // ------------------------------------
     }
 }
 

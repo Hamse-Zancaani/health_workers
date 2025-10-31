@@ -6,6 +6,7 @@ import Priority from '../sections/Priority/Priority';
 import Safety from '../sections/Safety/Safety';
 import Team from '../sections/Team/Team';
 import Footer from '../sections/Footer/Footer';
+import Services from '../pages/about_services/About_Services';
 
 const About = () => {
     return (
@@ -13,8 +14,9 @@ const About = () => {
             <Navbar />
             <AboutBanner />
             <Priority />
+           <Services/>
             {/* <Safety /> */}
-            {/* <Team /> */}
+            <Team />
             <Faq />
             <Footer />
         </>

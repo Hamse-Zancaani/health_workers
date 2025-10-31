@@ -15,7 +15,7 @@ const ServiceBanner = () => {
                                     <h2>Vores Services</h2>
                                     <p></p>
                                     <div className="theme-btn">
-                                        <Link to="/">Book an appointment</Link>
+                                        <Link to="/">Bliv kunde</Link>
                                     </div>
                                 </div>
                             </div>

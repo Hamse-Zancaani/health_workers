@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const navbarItems = [
         {
-            name: 'forside',
+            name: 'Forside',
             path: '/',
         },
         {
@@ -16,25 +16,28 @@ const Navbar = () => {
         },
          {
             name: 'Service',
-            path: '#',
+            path: '/services',
         },
         {
             name: 'Rekruttering',
-            path: '/singleservice',
+            path: '/recruitment',
         },
           {
             name: 'For Vikarer',
-            path: '#',
+            path: '/temporaryworkers',
         },
 
 
         {
             name: 'Nyheder',
-            path: '/blogs',
+            path: '/news',
         },
         {
-            name: 'Contact Us',
+            name: 'Kontakt',
             path: '/contact',
+        }, {
+            name: 'Produktionssektor',
+            path: '/productionsector',
         }
     ];
 

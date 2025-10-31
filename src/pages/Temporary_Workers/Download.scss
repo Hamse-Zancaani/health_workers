@@ -1,0 +1,132 @@
+@import '../../sass/colors.scss';
+
+.expert-section {
+    padding: 12px 0;
+    background: #f9fafc;
+    text-align: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expert-text {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+
+        .section-title {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 34px;
+                font-weight: 800;
+                color: $color-black;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 17px;
+                color: #555;
+                line-height: 1.6;
+                margin: 0 auto;
+                max-width: 550px;
+            }
+        }
+
+        .expert-buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px; // space between the two buttons
+            flex-wrap: nowrap; // keep them side by side on large screens
+
+            button {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 14px 40px;
+                border-radius: 40px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                border: 2px solid transparent;
+                white-space: nowrap; // prevent text wrapping
+            }
+
+            .btn-primary {
+                background: $color-blue;
+                color: #fff;
+                border-color: $color-blue;
+                box-shadow: 0 4px 12px rgba($color-blue, 0.25);
+
+                &:hover {
+                    background: darken($color-blue, 8%);
+                    border-color: darken($color-blue, 8%);
+                    transform: translateY(-3px);
+                    box-shadow: 0 6px 16px rgba($color-blue, 0.35);
+                }
+            }
+
+            .btn-outline {
+                background: transparent;
+                color: $color-blue;
+                border-color: $color-blue;
+
+                &:hover {
+                    background: $color-blue;
+                    color: #fff;
+                    transform: translateY(-3px);
+                }
+            }
+        }
+    }
+
+    .expert-img {
+        text-align: center;
+        margin-bottom: 40px;
+
+        img {
+            border-radius: 20px;
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .expert-section {
+        padding: 80px 15px;
+
+        .expert-text {
+            .section-title {
+                h2 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .expert-buttons {
+                flex-direction: column; // stack vertically on small screens
+                gap: 15px;
+
+                button {
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
